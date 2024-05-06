@@ -1,0 +1,99 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+
+header {
+    background-color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    gap: 5px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+
+.logo {
+    flex:1;
+    width: 60px;
+}
+
+.menu {
+    flex: 14;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    color: rgb(23, 112, 163);
+    font-weight: bold;
+    text-decoration: none;
+}
+.menu-toggle {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: blue;
+        justify-content: flex-start;
+    }
+
+    .menu-toggle.open {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+.social {
+    flex: 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    height: 25;
+}
+
+.social-icon {
+    width: 25px;
+
+}
+
+.social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon li {
+    margin: 0 10px;
+}
+
+.social-icon a {
+    color: rgb(53, 0, 197);
+    text-decoration: none;
+}
